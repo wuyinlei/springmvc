@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 
+	namespace：必须与对应的接口全类名一致
+	id:必须与对应接口的某个对应的方法名一致
+	
+ -->
+<mapper namespace="com.ruolan.bean.StudentMapper">
+	
+	<insert id="addStudent" parameterType="com.ruolan.bean.User">
+		insert into user (id,username,address) values(#{id},#{username},#{address})
+	</insert>
+	
+	 <resultMap id="student" type="com.ruolan.bean.User">
+        <id column="id" property="id" />
+        <result column="username" property="username" />
+        <result column="birthday" property="birthday" />
+		 <result column="sex" property="sex" />
+		 <result column="address" property="address" />
+
+	 </resultMap>
+	
+	<select id="selectStudent"  resultMap="student">
+		select * from user
+	</select>
+
+</mapper>
