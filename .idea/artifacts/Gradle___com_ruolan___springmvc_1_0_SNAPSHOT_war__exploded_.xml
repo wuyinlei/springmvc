@@ -31,6 +31,8 @@
           <element id="library" level="project" name="Gradle: log4j:log4j:1.2.17" />
           <element id="library" level="project" name="Gradle: org.apache.logging.log4j:log4j-core:2.8.2" />
           <element id="library" level="project" name="Gradle: org.apache.logging.log4j:log4j-api:2.8.2" />
+          <element id="library" level="project" name="Gradle: org.mybatis:mybatis:3.1.1" />
+          <element id="library" level="project" name="Gradle: org.mybatis:mybatis-spring:1.2.3" />
           <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:5.1.38" />
           <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.21" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.3.10.RELEASE" />
@@ -45,9 +47,11 @@
           <element id="library" level="project" name="Gradle: org.springframework:spring-tx:4.3.10.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-web:4.3.10.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:4.3.10.RELEASE" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.7.3" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.3.10.RELEASE" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/3.2.1/bcaf8001027188c1e18f687e266970315f09c98e/mybatis-3.2.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis-spring/1.2.3/18f0297b83960f280bacd68e87f9d374813e099e/mybatis-spring-1.2.3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-asl/1.9.13/1ee2f2bed0e5dd29d1cb155a166e6f8d50bbddb7/jackson-mapper-asl-1.9.13.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.13/3c304d70f42f832e0a86d45bd437f692129299a4/jackson-core-asl-1.9.13.jar" />
         </element>
       </element>
     </root>

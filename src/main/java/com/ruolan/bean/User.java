@@ -1,11 +1,14 @@
 package com.ruolan.bean;
 
+
 import java.util.Date;
 
 public class User {
 	
 	private int id;
 	private String username;
+
+
 	private String address;
 	private int sex;
 	private Date birthday;
@@ -60,5 +63,14 @@ public class User {
 		this.address = address;
 	}
 
-
+	@Override
+	public String toString() {
+		return "User{" +
+				"id=" + id +
+				", username='" + username + '\'' +
+				", address='" + address + '\'' +
+				", sex=" + sex +
+				", birthday=" + birthday +
+				'}';
+	}
 }

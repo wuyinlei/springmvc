@@ -60,4 +60,6 @@
 	<bean id="studentService" class="com.ruolan.service.StudentService">
 		<property name="studentDao" ref="studentDao"></property>
 	</bean>
+
+
 </beans>

@@ -18,5 +18,7 @@
 			expression="org.springframework.stereotype.Controller"/>
 		<context:exclude-filter type="annotation" 
 			expression="org.springframework.stereotype.Service"/>
-	</context:component-scan>	
+	</context:component-scan>
+
+
 </beans>

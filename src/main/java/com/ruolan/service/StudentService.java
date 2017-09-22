@@ -2,6 +2,7 @@ package com.ruolan.service;
 
 
 import com.ruolan.bean.User;
+import com.ruolan.bean.UserInfo;
 import com.ruolan.dao.UserDao;
 
 import java.util.List;
@@ -23,8 +24,17 @@ public class StudentService {
         studentDao.addStudent(student);
     }
 
-    public List<User> select() {
-        return studentDao.selectStudent();
+    public List<User> select(int index,int listrow) {
+        return studentDao.selectStudent(index,listrow);
     }
 
+//    selectUserInfo
+
+    public List<UserInfo> selectUserInfo(int index,int listrow) {
+        return studentDao.selectUserInfo( index, listrow);
+    }
+
+    public List<UserInfo> selectUser(int userId) {
+        return studentDao.selectInfo(userId);
+    }
 }

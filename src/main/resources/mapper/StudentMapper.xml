@@ -20,9 +20,38 @@
 		 <result column="address" property="address" />
 
 	 </resultMap>
-	
+
+
+	<resultMap id="user" type="com.ruolan.bean.UserInfo">
+		<id column="customer_id" property="userId" />
+		<result column="login_name" property="username" />
+		<!--<result column="modifyDate" property="modifyDate" />-->
+		<result column="customer_email" property="email" />
+		<result column="register_time" property="registerData" />
+		<result column="customer_level" property="level"/>
+		<result column="user_money" property="money"/>
+
+
+	</resultMap>
+
+	<select id="selectUserInfo" resultMap="user" >
+
+		SELECT * FROM customer_inf  limit #{index,jdbcType=INTEGER},#{listrow,jdbcType=INTEGER}
+
+	</select>
+
+	<select id="selectUser" resultMap="user" >
+
+		SELECT * FROM customer_inf  WHERE customer_id = #{userId}
+
+	</select>
+
+
 	<select id="selectStudent"  resultMap="student">
 		select * from user
 	</select>
+
+
+
 
 </mapper>
